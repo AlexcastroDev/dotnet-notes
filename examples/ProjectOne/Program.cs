@@ -1,9 +1,12 @@
 ﻿using Models;
+using DatetimeTest;
 
 BaseModel bm = new()
 {
-    Id = 1
+    Id = Guid.NewGuid(),
 };
+
+
 
 // struct Product {
 //     public int Id;
@@ -23,6 +26,10 @@ BaseModel bm = new()
 
 // Product p = new(1, "Product 1", 10.5f);
 
-
+var dt = new DatetimeBolado();
 
 Console.WriteLine(bm.Id);
+Console.WriteLine(DatetimeBolado.UTC());
+Console.WriteLine(DatetimeBolado.GetDate());
+DateTime dt1 = DateTime.Now;
+Console.WriteLine(DatetimeBolado.FormatDate(dt1));
