@@ -86,3 +86,10 @@ first[0] = 4; // set 2 => 4 (first)
 
 Console.WriteLine(first[0]); // 4
 Console.WriteLine(second[0]); // 2
+
+
+try {
+    first[10] = 1;
+} catch {
+    Console.WriteLine("Error");
+}
