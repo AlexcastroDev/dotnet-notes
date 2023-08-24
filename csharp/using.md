@@ -1,5 +1,12 @@
 # Introduction
 
+Definition:
+
+- Imports a namespace into a C# program file. The package provides a way to use types defined in a namespace without having to specify the fully qualified name of the type.
+
+- In large project it is common to use the using directive to avoid having to type the fully qualified name of a type every time it is used.
+
+
 ## What is a using?
 
 The using directive allows you to use types defined in a namespace without specifying the fully qualified namespace of that type. 
