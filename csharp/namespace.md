@@ -6,7 +6,7 @@ A namespace is a way to organize code in a logical manner. It is a collection of
 
 ## Why use namespaces?
 
-Namespaces are used to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together. It is a way to organize code in a logical manner. It is a way to group related code together.
+Namespaces are used to organize code in a logical manner. It is a way to group related code together. 
 
 ## How to use namespaces?
 
