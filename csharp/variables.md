@@ -34,7 +34,10 @@ Use meaningful names.
 - It is common to see constants in all uppercase letters, separated by underscores.
 The idea is to glance at the code and know that it is a constant.
 
-# Primitive Types
+# Primitive Types / Built-in Types
+
+Remarks
+The primitive types are Boolean, Byte, SByte, Int16, UInt16, Int32, UInt32, Int64, UInt64, IntPtr, UIntPtr, Char, Double, and Single.
 
 - Also known as built-in types.
 - These are base types from which other (complex) types will derive.
@@ -48,3 +51,105 @@ The idea is to glance at the code and know that it is a constant.
     -- Enumerators (Enums)
     -- Structures (Structs)
     -- Nullable Types
+
+example of null
+
+```csharp
+int? number = null;
+```
+
+All primitive types can be null.
+
+# Alias
+
+example of alias
+
+```csharp
+int number = 1; // alias
+Int32 number = 1; // full name
+```
+
+# Default values
+
+In C#, all built-in types have a default value.
+
+int => 0
+bool => false
+char => '\0'
+float => 0
+double => 0
+decimal => 0
+string => ""
+
+# Casting ( Implicit and Explicit )
+
+## Implicit
+
+- When the conversion is done automatically by the compiler.
+- When there is no loss of information.
+
+```csharp
+int number = 1;
+double number2 = number;
+```
+
+## Explicit
+
+- When the conversion is done manually by the programmer.
+- When there is loss of information.
+
+```csharp
+double number = 1.5;
+int number2 = (int)number;
+```
+
+# Parse
+
+- Convert a string to another type.
+
+```csharp
+string number = "1";
+int number2 = int.Parse(number);
+```
+
+# Convert 
+
+- Convert a string to another type.
+
+```csharp
+string number = "1";
+int number2 = Convert.ToInt32(number);
+```
+
+```csharp
+
+int number = 1;
+float real = 25.5f;
+
+real = number; // implicit => 100.0f
+integer = (int)real; // explicit => 25
+```
+
+All variable have toString() method.
+
+```csharp
+int number = 1;
+string text = number.ToString();
+```
+
+
+# Enums 
+
+example of enum
+
+```csharp
+
+enum EEstadoCivil {
+    Solteiro = 1,
+    Casado = 2,
+    Divorciado = 3,
+    Viuvo = 4
+}
+
+EEstadoCivil estadoCivil = EEstadoCivil.Solteiro;
+```
