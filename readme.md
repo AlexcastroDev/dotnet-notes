@@ -18,6 +18,7 @@ I did not take not about everything, because I already know some things, but I t
 ### [Using](./csharp/using.md)
 ### [Variables, Parse and Conversion](./csharp/variables.md)
 ### [Structs](./csharp/structs.md)
+### [Acessors](./csharp/acessors.md)
 
 # C# and POO
 
