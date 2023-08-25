@@ -1,6 +1,7 @@
 ﻿using Models;
 using DatetimeTest;
 using Money;
+using ProjectOne;
 
 BaseModel bm = new()
 {
@@ -93,3 +94,13 @@ try {
 } catch {
     Console.WriteLine("Error");
 }
+
+Acessors acessorsA = new();
+
+Acessors acessorsB = new()
+{
+    MyProperty = 10
+};
+
+Console.WriteLine(acessorsA.MyProperty);
+Console.WriteLine(acessorsB.MyProperty);
