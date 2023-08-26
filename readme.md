@@ -19,7 +19,14 @@ I did not take not about everything, because I already know some things, but I t
 ### [Variables, Parse and Conversion](./csharp/variables.md)
 ### [Structs](./csharp/structs.md)
 ### [Acessors](./csharp/acessors.md)
-### [Method Overloading](./csharp/method_overloading.md.md)
+### [Method Overloading](./csharp/method_overloading.md)
+### [Comparing Objects](./csharp/comparing_object.md)
+### [Upcast and Downcast](./csharp/upcast_downcast.md)
+### [Partial class](./csharp/partial_classes.md)
+### [Sealed class](./csharp/sealed_classes.md)
+### [Access Modifiers](./csharp/access_modifiers.md)
+### [Delegates](./csharp/delegates.md)
+### [Events](./csharp/events.md)
 
 # C# and POO
 
@@ -46,9 +53,6 @@ I will skip notes about the following contents, because I already know them.
 - Abstraction
 - Inheritance
 - Polymorphism
-
-
-
 - Complex types
 - Properties
 - Methods
@@ -56,69 +60,8 @@ I will skip notes about the following contents, because I already know them.
 - Static classes
 - Interfaces
 - Abstract classes
-- Comparing objects
-- Delegates
-- Events
 - Generics
 - Lists
-
-- Upcast and Downcast
-
-Upcast is when you cast a derived class to a base class.
-
-Downcast is when you cast a base class to a derived class.
-
-Example of upcast is on `/examples/ProjectOne/Upcast.cs` and the example of downcast is on `/examples/ProjectOne/Downcast.cs`
-
-
-- Sealed classes
-
-dont allow to inherit from them
-
-example:
-
-```csharp
-sealed class MyClass
-{
-    // Class members here.
-}
-```
-
-- Partial class
-
-A Partial class in C# is a class that can be split into two or more classes. The Partial modifier is used to create a partial class. We can create a class in two or more files using the partial keyword.
-
-Examples:
-
-```csharp
-// File1.cs
-partial class MyClass
-{
-    public void Method1()
-    {
-        Console.WriteLine("Method1");
-    }
-}
-
-// File2.cs
-partial class MyClass
-{
-    public void Method2()
-    {
-        Console.WriteLine("Method2");
-    }
-}
-```
-
-- Access modifiers
-
-We have private, protected, internal and public
-
-private and public are very common.
-
-Protected is used when you want to use the class only in the same assembly or in a derived class.
-
-The internal is used when you want to use the class only in the same assembly.
 
 # References
 
