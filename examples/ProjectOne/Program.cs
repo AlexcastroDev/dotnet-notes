@@ -2,6 +2,7 @@
 using DatetimeTest;
 using Money;
 using ProjectOne;
+using EventRoom;
 
 BaseModel bm = new()
 {
@@ -115,3 +116,20 @@ using (Acessors acessors = new() {
 {
     Console.WriteLine(acessors.MyProperty);
 }
+
+Console.WriteLine("--------------");
+
+var eventRoom = new Room();
+
+eventRoom.OnEnter += () => {
+    Console.WriteLine("Welcome to the room");
+};
+
+
+eventRoom.Enter();
+
+eventRoom.OnExit += () => {
+    Console.WriteLine("Bye bye");
+};
+
+eventRoom.Exit();
