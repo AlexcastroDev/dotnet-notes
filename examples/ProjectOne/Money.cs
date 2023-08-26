@@ -7,6 +7,10 @@ namespace Money {
         public Monetize(decimal amount) {
             Amount = amount;
         }
+
+        public Monetize(int amount) {
+            Amount = amount * 2;
+        }
         
         public override string ToString() {
             return Amount.ToString(

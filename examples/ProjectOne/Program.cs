@@ -95,6 +95,7 @@ try {
     Console.WriteLine("Error");
 }
 
+
 Acessors acessorsA = new();
 
 Acessors acessorsB = new()
@@ -104,3 +105,13 @@ Acessors acessorsB = new()
 
 Console.WriteLine(acessorsA.MyProperty);
 Console.WriteLine(acessorsB.MyProperty);
+
+
+Console.WriteLine("--------------");
+
+using (Acessors acessors = new() {
+    MyProperty = 10
+})
+{
+    Console.WriteLine(acessors.MyProperty);
+}

@@ -54,8 +54,6 @@ I will skip notes about the following contents, because I already know them.
 - Methods
 - Using and Dispose
 - Static classes
-- Sealed classes
-- Partial class
 - Interfaces
 - Abstract classes
 - Upcast and Downcast
@@ -64,6 +62,45 @@ I will skip notes about the following contents, because I already know them.
 - Events
 - Generics
 - Lists
+
+- Sealed classes
+
+dont allow to inherit from them
+
+example:
+
+```csharp
+sealed class MyClass
+{
+    // Class members here.
+}
+```
+
+- Partial class
+
+A Partial class in C# is a class that can be split into two or more classes. The Partial modifier is used to create a partial class. We can create a class in two or more files using the partial keyword.
+
+Examples:
+
+```csharp
+// File1.cs
+partial class MyClass
+{
+    public void Method1()
+    {
+        Console.WriteLine("Method1");
+    }
+}
+
+// File2.cs
+partial class MyClass
+{
+    public void Method2()
+    {
+        Console.WriteLine("Method2");
+    }
+}
+```
 
 - Access modifiers
 
